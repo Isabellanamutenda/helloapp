@@ -1,16 +1,16 @@
-package com.example.hello2
+package layout
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.telecom.Call
 import android.view.ActionMode
 import android.widget.Toast
-import androidx.core.content.ContextCompat.startActivity
-import layout.ApiInterface
-import layout.Registrationresponse
-import layout.RequestBody
-import android.widget.Toast.makeText as makeText1
+import androidx.appcompat.app.AppCompatActivity
+import com.example.hello2.MainActivity
+import com.example.hello2.R
+
+class Registration {
+}
 
 class Registration : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -78,7 +78,7 @@ fun registerUser(requestBody: RequestBody) {
             t: Throwable
         ) {
             val baseContext = null
-            makeText1(baseContext, t.message, Toast.LENGTH_LONG).show()
+            Toast.makeText(baseContext, t.message, Toast.LENGTH_LONG).show()
         }
 
         fun onResponse(
@@ -91,7 +91,7 @@ fun registerUser(requestBody: RequestBody) {
             startActivity(Intent(baseContext, MainActivity::class.java))
         } else {
             val baseContext = null
-            makeText1(baseContext, response.errorBody().toString(), Toast.LENGTH_LONG)
+            Toast.makeText(baseContext, response.errorBody().toString(), Toast.LENGTH_LONG)
                 .show()
         }
 

@@ -4,16 +4,21 @@ import android.telecom.Call
 
 interface `API interface` {
 
-}
-interface ApiInterface {
-    @POST("register")
-    fun registerStudent(@Body requestBody: RequestBody): Call<Registrationresponse.RegistrationResponse>
-}
+    import android.telecom.Call
 
-annotation class POST(val value: String)
+    interface `API interface` {
 
-annotation class Body
+    }
+    interface ApiInterface {
+        @POST("register")
+        fun registerStudent(@Body requestBody: RequestBody): Call<Registrationresponse.RegistrationResponse>
+    }
 
-class RequestBody {
+    annotation class POST(val value: String)
 
+    annotation class Body
+
+    class RequestBody {
+
+    }
 }

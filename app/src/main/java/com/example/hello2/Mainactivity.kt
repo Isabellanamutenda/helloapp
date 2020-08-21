@@ -1,5 +1,9 @@
 package com.example.hello2
 
+class Mainactivity {
+}
+package com.example.hello2
+
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
