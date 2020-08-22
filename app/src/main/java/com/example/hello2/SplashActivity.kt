@@ -1,7 +1,9 @@
 package com.example.hello2
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.preference.PreferenceManager
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,7 +21,7 @@ class SplashActivity : AppCompatActivity() {
             val intent = Intent(baseContext, MainActivity::class.java)
             startActivity(intent)
         } else {
-            val intent = Intent(baseContext, CoursesActivity::class.java)
+            val intent = Intent(baseContext, coursesActivity::class.java)
             startActivity(intent)
         }
     }
