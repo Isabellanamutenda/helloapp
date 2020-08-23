@@ -1,17 +1,16 @@
-package layout
+package com.example.hello2
 
 import android.telecom.Call
 
-interface `API interface` {
-
+interface APIinterface {
     import android.telecom.Call
 
-    interface `API interface` {
+    interface `APIinterface` {
 
     }
     interface ApiInterface {
         @POST("register")
-        fun registerStudent(@Body requestBody: RequestBody): Call<Registrationresponse.RegistrationResponse>
+        fun registerStudent(@Body requestBody: RequestBody): Call<RegistrationResponse.RegistrationResponse>
     }
 
     annotation class POST(val value: String)

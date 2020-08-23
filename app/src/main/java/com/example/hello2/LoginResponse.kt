@@ -1,8 +1,9 @@
-package layout
+package com.example.hello2
 
-class loginResponse {
+class LoginResponse {
     data class LoginResponse(
         @SerializedName("access_token") var accessToken: String,
         @SerializedName("message") var message: String
     )
+
 }
