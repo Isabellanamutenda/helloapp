@@ -1,6 +1,6 @@
 package com.example.hello2
 
-class `API client` {
+class `APIclient` {
     object APIclients {
     }
     fun <T> buildService(service: Class<T>): T {
