@@ -1,6 +1,8 @@
-package com.example.hello2
+package com.example.hello2.models
 
 import androidx.recyclerview.widget.RecyclerView
+import com.example.hello2.Course
+import com.example.hello2.R
 
 class Course_Adapter {
     class CoursesAdapter(var courseList: List<Course>) :
@@ -9,7 +11,9 @@ class Course_Adapter {
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CoursesViewHolder {
             var itemView =
                 LayoutInflater.from(parent.context).inflate(R.layout.row_course_item, parent, false)
-            return CoursesViewHolder(itemView)
+            return CoursesViewHolder(
+                itemView
+            )
         }
 
         override fun getItemCount(): Int {

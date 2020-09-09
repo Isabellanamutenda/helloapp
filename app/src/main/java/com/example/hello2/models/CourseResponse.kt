@@ -1,4 +1,6 @@
-package com.example.hello2
+package com.example.hello2.models
+
+import com.example.hello2.Course
 
 class CourseResponse {
     import com.google.gson.annotations.SerializedName

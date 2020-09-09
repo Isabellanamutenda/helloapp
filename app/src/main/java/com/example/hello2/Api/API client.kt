@@ -1,4 +1,4 @@
-package com.example.hello2
+package com.example.hello2.Api
 
 class `APIclient` {
     object APIclients {

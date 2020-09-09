@@ -1,4 +1,4 @@
-package com.example.hello2
+package com.example.hello2.models
 
 class RegistrationResponse {
     data class RegistrationResponse(

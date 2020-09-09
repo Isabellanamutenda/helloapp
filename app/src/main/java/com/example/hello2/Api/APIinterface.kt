@@ -1,6 +1,7 @@
-package com.example.hello2
+package com.example.hello2.Api
 
 import android.telecom.Call
+import com.example.hello2.models.RegistrationResponse
 
 interface APIinterface {
     import android.telecom.Call
